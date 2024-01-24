@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,12 +8,14 @@
     scroll-behavior: smooth;
 }
 
-dl, ol, ul{
+dl,
+ol,
+ul {
     margin: unset !important;
 }
 
 
-.wrapper{
+.wrapper {
     background-color: #008f43;
 }
 
@@ -70,7 +72,7 @@ dl, ol, ul{
     transition: .2s;
 }
 
-.navbar-container ul li:hover{
+.navbar-container ul li:hover {
     background-color: #06994b;
 }
 
@@ -102,13 +104,14 @@ dl, ol, ul{
     max-width: 1300px;
     margin: auto;
 }
-.hero-container .left{
+
+.hero-container .left {
     width: 50%;
     height: 100%;
     padding-left: 70px;
 }
 
-.hero-container .left h1{
+.hero-container .left h1 {
     font-size: 70px;
     color: #fff;
     font-weight: 900;
@@ -117,14 +120,14 @@ dl, ol, ul{
     margin-bottom: 20px;
 }
 
-.hero-container .left p{
+.hero-container .left p {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 30px;
 }
 
-.hero-container .left button{
+.hero-container .left button {
     background-color: #fff;
     color: #000;
     border: none;
@@ -137,7 +140,7 @@ dl, ol, ul{
     cursor: pointer;
 }
 
-.hero-container .right{
+.hero-container .right {
     width: 50%;
     height: 100%;
     display: flex;
@@ -146,12 +149,12 @@ dl, ol, ul{
     position: relative;
 }
 
-.hero-container .right .hero-img{
+.hero-container .right .hero-img {
     width: 400px;
     border-radius: 50%;
 }
 
-.hero-container .review{
+.hero-container .review {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -165,12 +168,12 @@ dl, ol, ul{
     box-shadow: 0px 5px 10px 0px #00000033;
 }
 
-.hero-container .review .top{
+.hero-container .review .top {
     display: flex;
     gap: 10px;
 }
 
-.hero-container .review .h1{
+.hero-container .review .h1 {
     font-size: 17px;
     color: #000;
     font-weight: 700;
@@ -179,13 +182,13 @@ dl, ol, ul{
     gap: 2px;
 }
 
-.hero-container .review .h1 span{
+.hero-container .review .h1 span {
     font-size: 18px;
     color: #008f43;
     font-size: 18px;
 }
 
-.hero-container .review p{
+.hero-container .review p {
     color: #000;
     font-size: 14px;
     font-weight: 600;
@@ -194,11 +197,11 @@ dl, ol, ul{
     opacity: .7;
 }
 
-.hero-container .review img{
+.hero-container .review img {
     height: 40px;
 }
 
-.hero-container .review button{
+.hero-container .review button {
     background-color: #008f43;
     color: #fff;
     border: none;
@@ -213,7 +216,7 @@ dl, ol, ul{
     transition: .2s;
 }
 
-.hero-container .review button:hover{
+.hero-container .review button:hover {
     opacity: .8;
 }
 
@@ -229,16 +232,13 @@ dl, ol, ul{
     box-sizing: border-box;
 }
 
-.explore-menu{
-
-}
-
-.explore-menu h1{
+.explore-menu h1 {
     font-size: 20px;
     font-weight: 600;
+    color: #000;
 }
 
-.explore-menu .em-types{
+.explore-menu .em-types {
     /* background-color: saddlebrown; */
     width: 100%;
     min-height: 70px;
@@ -249,7 +249,7 @@ dl, ol, ul{
     cursor: default;
 }
 
-.explore-menu .em-types .type{
+.explore-menu .em-types .type {
     width: 100%;
     height: 60px;
     display: flex;
@@ -265,22 +265,22 @@ dl, ol, ul{
     transition: .2s;
 }
 
-.explore-menu .em-types .type.active{
+.explore-menu .em-types .type.active {
     border-color: #008f43;
 }
 
 .explore-menu .em-types .type.active i,
-.explore-menu .em-types .type.active img{
+.explore-menu .em-types .type.active img {
     background-color: #008f43;
     color: #fff;
 }
 
-.explore-menu .em-types .type.active span{
+.explore-menu .em-types .type.active span {
     color: #008f43;
 }
 
 
-.explore-menu .em-types .type i{
+.explore-menu .em-types .type i {
     min-width: 45px;
     height: 100%;
     background-color: #90909027;
@@ -292,7 +292,7 @@ dl, ol, ul{
     color: #000;
 }
 
-.explore-menu .em-types .type img{
+.explore-menu .em-types .type img {
     height: auto;
     width: 45px;
     padding: 5px;
@@ -300,7 +300,7 @@ dl, ol, ul{
     border-radius: 7px;
 }
 
-.explore-menu .em-types .type span{
+.explore-menu .em-types .type span {
     width: 100%;
     height: 100%;
     display: flex;
@@ -312,6 +312,54 @@ dl, ol, ul{
     /* background-color: cadetblue; */
     font-weight: 700;
 }
+
+.menu {
+    padding: 10px;
+}
+
+.menu h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+.menu-items {
+    display: flex;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 20px;
+}
+
+.menu-item {
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.menu-item .item-image {
+    width: 100%;
+    height: 18  0px;
+    /* overflow: hidden; */
+
+}
+
+.menu-item .item-image img {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .restaurants-container {
