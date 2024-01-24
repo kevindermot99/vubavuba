@@ -1,36 +1,91 @@
-#navbar-container{
-    background-color: cadetblue;
-    height: 65px;
+/* NAVBAR */
+
+#navbar-container {
+    background-color: #008f43;
+    height: 70px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
-#hero-container{
-    background-color: chocolate;
+#navbar-container img {
+    height: 45px;
+    width: auto;
+    pointer-events: none;
+}
+
+#navbar-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#navbar-container ul li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #fff;
+    /* background-color: cadetblue; */
+    transition: .2s;
+}
+
+#navbar-container ul li:hover{
+    background-color: #06994b;
+}
+
+
+#navbar-container .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#navbar-container .socials i {
+    color: #fff;
+    font-size: 25px;
+}
+
+/* HERO */
+
+#hero-container {
+    background-color: #008f43;
     min-height: 90vh;
     width: 100%;
 }
 
-#menu-container{
+#menu-container {
     background-color: khaki;
     min-height: 500px;
     width: 100%;
 }
 
-#restaurants-container{
+#restaurants-container {
     background-color: darkolivegreen;
     min-height: 500px;
     width: 100%;
 }
 
-#footer-container{
+#footer-container {
     background-color: cadetblue;
     min-height: 400px;
     width: 100%;
 }
 
-#about-container{
+#about-container {
     background-color: darkorchid;
     min-height: 500px;
     width: 100%;
 }
-
