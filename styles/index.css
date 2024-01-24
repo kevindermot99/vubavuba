@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+dl, ol, ul{
+    margin: unset !important;
+}
+
 
 .wrapper{
     background-color: #008f43;
@@ -42,6 +46,8 @@
     height: 45px;
     width: auto;
     pointer-events: none;
+    /* background-color: cadetblue; */
+    margin-bottom: 0;
 }
 
 .navbar-container ul {
@@ -49,6 +55,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    /* background-color: cadetblue; */
 }
 
 .navbar-container ul li {
@@ -73,6 +80,7 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+    /* background-color: cadetblue; */
 }
 
 .navbar-container .socials i {
@@ -235,7 +243,7 @@
     width: 100%;
     min-height: 70px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
     grid-gap: 10px;
     padding: 10px;
     cursor: default;
@@ -248,21 +256,38 @@
     justify-content: flex-start;
     align-items: center;
     background-color: #fff;
-    border-radius: 8px;
-    /* border: 2px solid #90909027; */
+    border-radius: 10px;
+    border: 2px solid #cacaca48;
     overflow: hidden;
     padding: 7px;
     cursor: pointer;
+    word-break: break-all;
+    transition: .2s;
 }
 
+.explore-menu .em-types .type.active{
+    border-color: #008f43;
+}
+
+.explore-menu .em-types .type.active i,
+.explore-menu .em-types .type.active img{
+    background-color: #008f43;
+    color: #fff;
+}
+
+.explore-menu .em-types .type.active span{
+    color: #008f43;
+}
+
+
 .explore-menu .em-types .type i{
-    width: 50px;
+    min-width: 45px;
     height: 100%;
     background-color: #90909027;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 26px;
+    font-size: 23px;
     border-radius: 7px;
     color: #000;
 }
@@ -276,7 +301,7 @@
 }
 
 .explore-menu .em-types .type span{
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
@@ -284,7 +309,8 @@
     align-items: center;
     color: #000;
     font-size: 16px;
-    font-weight: 600;
+    /* background-color: cadetblue; */
+    font-weight: 700;
 }
 
 
