@@ -8,6 +8,10 @@
 }
 
 
+.wrapper{
+    background-color: #008f43;
+}
+
 /* NAVBAR */
 
 .navbar-container {
@@ -21,9 +25,16 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(6px);
+    max-width: 1300px;
+    margin: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    z-index: 10;
 }
 
 .navbar-container img {
@@ -72,16 +83,20 @@
 
 .hero-container {
     background-color: #008f43;
-    min-height: 90vh;
+    min-height: 600px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 50px;
+    padding-top: 50px;
+    max-width: 1300px;
+    margin: auto;
 }
 .hero-container .left{
     width: 50%;
     height: 100%;
+    padding-left: 70px;
 }
 
 .hero-container .left h1{
@@ -90,7 +105,7 @@
     font-weight: 900;
     text-transform: capitalize;
     letter-spacing: 2px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .hero-container .left p{
@@ -106,6 +121,11 @@
     border: none;
     outline: none;
     font-size: 15px;
+    height: 45px;
+    padding: 0 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .hero-container .right{
@@ -114,17 +134,78 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.hero-container .right img{
-    width: 430px;
-    background-color: #ffffff;
+.hero-container .right .hero-img{
+    width: 400px;
     border-radius: 50%;
-    padding: 10px;
 }
+
+.hero-container .review{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    max-width: 240px;
+    right: 0;
+    bottom: -40px;
+    box-shadow: 0px 5px 10px 0px #00000033;
+}
+
+.hero-container .review .top{
+    display: flex;
+    gap: 10px;
+}
+
+.hero-container .review h1{
+    font-size: 18px;
+    color: #000;
+}
+
+.hero-container .review h1 span{
+    font-size: 18px;
+    color: #008f43;
+    font-size: 15px;
+}
+
+.hero-container .review p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    word-break: break-all;
+}
+
+.hero-container .review img{
+    height: 40px;
+}
+
+.hero-container .review button{
+    background-color: #008f43;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    height: 40px;
+    padding: 0 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: .2s;
+}
+
+.hero-container .review button:hover{
+    opacity: .8;
+}
+
+/* MENU */
 
 .menu-container {
-    background-color: khaki;
+    background-color: #fff;
     min-height: 500px;
     width: 100%;
 }
