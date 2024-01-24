@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+
 /* NAVBAR */
 
-#navbar-container {
+.navbar-container {
     background-color: #008f43;
-    height: 70px;
+    height: 60px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -16,20 +26,20 @@
     top: 0;
 }
 
-#navbar-container img {
+.navbar-container img {
     height: 45px;
     width: auto;
     pointer-events: none;
 }
 
-#navbar-container ul {
+.navbar-container ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-#navbar-container ul li {
+.navbar-container ul li {
     list-style: none;
     font-size: 14px;
     font-weight: 600;
@@ -41,50 +51,97 @@
     transition: .2s;
 }
 
-#navbar-container ul li:hover{
+.navbar-container ul li:hover{
     background-color: #06994b;
 }
 
 
-#navbar-container .socials {
+.navbar-container .socials {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
-#navbar-container .socials i {
+.navbar-container .socials i {
     color: #fff;
     font-size: 25px;
 }
 
 /* HERO */
 
-#hero-container {
+.hero-container {
     background-color: #008f43;
     min-height: 90vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+.hero-container .left{
+    width: 50%;
+    height: 100%;
 }
 
-#menu-container {
+.hero-container .left h1{
+    font-size: 70px;
+    color: #fff;
+    font-weight: 900;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.hero-container .left p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.hero-container .left button{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.hero-container .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container .right img{
+    width: 430px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.menu-container {
     background-color: khaki;
     min-height: 500px;
     width: 100%;
 }
 
-#restaurants-container {
+.restaurants-container {
     background-color: darkolivegreen;
     min-height: 500px;
     width: 100%;
 }
 
-#footer-container {
+.footer-container {
     background-color: cadetblue;
     min-height: 400px;
     width: 100%;
 }
 
-#about-container {
+.about-container {
     background-color: darkorchid;
     min-height: 500px;
     width: 100%;
