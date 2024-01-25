@@ -110,7 +110,7 @@ p {
 .hero-container .left {
     width: 50%;
     height: 100%;
-    padding-left: 70px;
+    padding-left: 0px;
 }
 
 .hero-container .left h1 {
