@@ -406,6 +406,10 @@ p {
     margin-bottom: 0 !important;
     color: #000;
     width: fit-content;
+    text-transform: capitalize;
+    opacity: .7;
+    background-color: #9090901c;
+    padding: 4px 10px;
     border-radius: 7px;
 }
 
