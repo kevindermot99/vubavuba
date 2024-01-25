@@ -125,7 +125,6 @@ p {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 30px;
 }
 
 .hero-container .left button {
@@ -139,6 +138,7 @@ p {
     border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .hero-container .right {
