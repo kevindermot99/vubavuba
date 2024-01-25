@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -234,7 +235,7 @@ p {
     box-sizing: border-box;
 }
 
-.menu-head{
+.menu-head {
     display: flex;
     justify-content: space-between;
 }
@@ -245,7 +246,7 @@ p {
     color: #000;
 }
 
-.menu-head a{
+.menu-head a {
     color: #008f43;
     text-transform: capitalize;
     font-weight: 600;
@@ -343,6 +344,9 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     grid-gap: 20px;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row dense;
+    counter-reset: boxes;
 }
 
 .menu-item {
@@ -373,7 +377,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    
+
 }
 
 .item-details .item-ratting {
@@ -388,7 +392,7 @@ p {
     font-size: 14px;
 }
 
-.item-ratting p{
+.item-ratting p {
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
 }
@@ -420,15 +424,15 @@ p {
     align-items: center;
     justify-content: space-between;
     padding-top: 4px;
-    
+
 }
 
-.item-price p{
+.item-price p {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
 
-.item-price .price{
+.item-price .price {
     /* background-color: green; */
     width: 100%;
     font-size: 20px;
@@ -441,11 +445,11 @@ p {
     /* background-color: orange; */
     display: flex;
     justify-content: flex-end;
-    align-items: center;    
+    align-items: center;
     gap: 4px;
 }
 
-.item-price .add-to-cart button{
+.item-price .add-to-cart button {
     width: 35px;
     height: 35px;
     border: none;
@@ -457,11 +461,11 @@ p {
     cursor: pointer;
 }
 
-.item-price .add-to-cart button:hover{
+.item-price .add-to-cart button:hover {
     background-color: #90909094;
 }
 
-.item-price .add-to-cart .quantity{
+.item-price .add-to-cart .quantity {
     width: 35px;
     height: 35px;
     display: flex;
@@ -469,7 +473,7 @@ p {
     align-items: center
 }
 
-.item-price .add-to-cart .quantity input{
+.item-price .add-to-cart .quantity input {
     width: 100%;
     text-align: center;
     transition: .2s;
@@ -480,11 +484,11 @@ p {
     height: 100%;
 }
 
-.item-price .add-to-cart .quantity input:focus{
+.item-price .add-to-cart .quantity input:focus {
     border-color: #008f43;
 }
 
-.item-price .add-to-cart .cart{
+.item-price .add-to-cart .cart {
     background-color: #008f43;
     width: 35px;
     height: 35px;
@@ -497,7 +501,7 @@ p {
     cursor: pointer;
 }
 
-.item-price .add-to-cart .cart i{
+.item-price .add-to-cart .cart i {
     color: #fff;
 }
 
