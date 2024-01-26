@@ -556,7 +556,7 @@ p {
 }
 
 .rg-item:hover{
-    background-color: #ececec;
+    background-color: #f5f5f5;
 }
 
 .rg-item img{
@@ -570,9 +570,13 @@ p {
     font-size: 18px;
     font-weight: 800;
     letter-spacing: 1px;
+    transition: .2s;
+    margin-bottom: 0 !important;
 }
 
-
+.rg-item:hover h1{
+    color: #008f43;
+}
 
 
 
