@@ -589,7 +589,7 @@ p {
 
 
 .about-container {
-    background-color: ;
+    background-color: #fff;
     color: #fff;
     font-size: 18px;
     font-weight: 600;
@@ -603,10 +603,14 @@ p {
 .swiper-wrapper{
     height: 100vh;
     max-height: 600px;
-    width: 100%;
+    width: 95%;
+    max-width: 1300px;
+    margin: auto;
     background-color: #000;
     position: relative;
     overflow: hidden;
+    border-radius: 50px;
+    margin-bottom: 100px;
 }
 .swiper-slide img{
     position: absolute;
@@ -640,6 +644,7 @@ p {
 .swiper-slide p{
     padding: 0px 50px 50px;
     font-size: 20px;
+    z-index: 10;
 }
 
 
