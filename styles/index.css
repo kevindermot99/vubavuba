@@ -589,7 +589,7 @@ p {
 
 
 .about-container {
-    /* background-image: ; */
+    background-color: ;
     color: #fff;
     font-size: 18px;
     font-weight: 600;
@@ -601,9 +601,10 @@ p {
 
 
 .swiper-wrapper{
-    height: 600px;
+    height: 100vh;
+    max-height: 600px;
     width: 100%;
-    background-color: cadetblue;
+    background-color: #000;
     position: relative;
     overflow: hidden;
 }
@@ -612,7 +613,36 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -1;
+    opacity: .6;
 }
+
+.swiper-slide img::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.swiper-slide h1{
+    z-index: 10;
+    padding: 0 50px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.swiper-slide p{
+    padding: 0px 50px 50px;
+    font-size: 20px;
+}
+
+
 
 
 
