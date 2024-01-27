@@ -814,7 +814,7 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
-        
+
       </div>
 
       <!-- Footer -->
@@ -833,13 +833,10 @@
       var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       effect: "fade",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
     });
     </script>
