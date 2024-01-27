@@ -600,15 +600,15 @@ p {
     color: #fff;
     font-size: 18px;
     font-weight: 600;
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-end;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px 50px;
+    gap: 10px;
+    padding: 50px;
     margin: auto;
-    text-align: center;
+    text-align: left;
 }
 
