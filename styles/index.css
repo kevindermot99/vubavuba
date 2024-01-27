@@ -597,6 +597,7 @@ p {
     width: 100%;
     gap: 10px;
     text-align: left;
+    padding-bottom: 100px;
 }
 
 
@@ -610,7 +611,6 @@ p {
     position: relative;
     overflow: hidden;
     border-radius: 50px;
-    margin-bottom: 100px;
 }
 .swiper-slide img{
     position: absolute;
