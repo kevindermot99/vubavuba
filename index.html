@@ -780,8 +780,8 @@
       </div>
 
       <!-- about -->
-      <div class="about-container">
-        <h1>About Us</h1>
+      <div class="about-container mySwiper">
+        <!-- <h1>About Us</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
           aspernatur! Id eveniet fuga inventore dolore voluptas asperiores
@@ -793,28 +793,18 @@
           consectetur adipisicing elit. Expedita ullam aliquid natus tenetur
           sequi! Aspernatur, maiores perspiciatis itaque voluptatem error
           assumenda eum aut facere. Dignissimos facilis dolorem a hic vero.
-        </p>
-        
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-            </div>
+        </p> -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </div>
         </div>
-
       </div>
 
       <!-- Footer -->
@@ -831,14 +821,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      effect: "fade",
-      loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-    });
+        spaceBetween: 30,
+        effect: "fade",
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
     </script>
   </body>
 </html>
