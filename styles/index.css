@@ -663,4 +663,26 @@ p {
     background-color:  #008f43;
     min-height: 400px;
     width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px;
+    justify-content: center;
+}
+
+.footer-container img{
+    height: 80px;
+}
+
+.footer-container .footer-links{
+    display: flex;
+    /* background-color: cadetblue; */
+}
+
+.footer-links ul li{
+    list-style: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
 }
