@@ -872,11 +872,16 @@
       // burgers
       var burgerBtn = document.getElementById("Burger");
       $(burgerBtn).click(function () {
+        $(".menu-item").show();
         $(".menu-item:not(.Burger)").hide();
       })
 
       // chicken
       var chickenBtn = document.getElementById("Chicken")
+      $(chickenBtn).click(function () {
+        $(".menu-item").show();
+        $(".menu-item:not(.Chicken)").hide();
+      })
 
     </script>
   </body>
