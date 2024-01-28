@@ -593,11 +593,10 @@ p {
     color: #fff;
     font-size: 18px;
     font-weight: 600;
-    min-height: 600px;
+    min-height: 500px;
     width: 100%;
     gap: 10px;
     text-align: left;
-    padding-bottom: 100px;
 }
 
 
