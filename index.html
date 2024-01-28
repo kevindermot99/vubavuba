@@ -75,11 +75,12 @@
 
       <!-- Menu -->
       <div class="menu-container">
+
         <div class="explore-menu">
           <h1>Explore Menu</h1>
           <div class="em-types">
             <div class="type active"><span>All Items</span></div>
-            <div class="type">
+            <div class="type" id="Burger">
               <img src="assets/burger.png" /><span>Burger</span>
             </div>
             <div class="type">
@@ -113,7 +114,7 @@
           </div>
           <div class="menu-items">
             <!-- single item -->
-            <div class="menu-item">
+            <div class="menu-item Burger">
               <div class="item-image">
                 <img
                   src="https://www.oliveandmango.com/images/uploads/2021_06_21_classic_grilled_cheeseburger_1.jpg"
@@ -204,7 +205,7 @@
             </div>
 
             <!-- single item -->
-            <div class="menu-item">
+            <div class="menu-item Burger">
               <div class="item-image">
                 <img
                   src="https://www.babaganosh.org/wp-content/uploads/2020/06/pork-burgers-07.jpg"
@@ -451,7 +452,7 @@
             </div>
 
             <!-- single item -->
-            <div class="menu-item">
+            <div class="menu-item Burger">
               <div class="item-image">
                 <img
                   src="https://tcburgerblog.com/wp-content/uploads/2022/10/Triple-Bacon-Cheeseburger-My-Burger-scaled.jpg"
@@ -484,7 +485,7 @@
 
             <!-- single item -->
             <div class="menu-item">
-              <div class="item-image">
+              <div class="item-image Burger">
                 <img
                   src="https://www.modernfarmhouseeats.com/wp-content/uploads/2023/04/crispy-chicken-burger-1.jpg"
                 />
@@ -846,6 +847,8 @@
     ></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <script>
       var swiper = new Swiper(".mySwiper", {
         effect: "fade",
@@ -855,6 +858,19 @@
           disableOnInteraction: false,
         },
       });
+    </script>
+
+
+    <!-- Toggling items -->
+    <script>
+
+      // burgers
+      var burgerBtn = document.getElementById("Burger");
+      $(burgerBtn).click(function () {
+        $(".menu-item:not(.Burger)").hide();
+      })
+
+
     </script>
   </body>
 </html>
