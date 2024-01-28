@@ -603,22 +603,23 @@ p {
 
 .swiper-wrapper{
     height: 100vh;
-    max-height: 600px;
-    width: 95%;
-    max-width: 1300px;
+    max-height: 500px;
+    width: 100%;
+    /* max-width: 1300px; */
     margin: auto;
     background-color: #000;
     position: relative;
     overflow: hidden;
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 .swiper-slide img{
     position: absolute;
+    bottom: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: .6;
+    opacity: .4;
 }
 
 .swiper-slide img::before{
@@ -645,6 +646,7 @@ p {
     padding: 0px 50px 50px;
     font-size: 20px;
     z-index: 10;
+    max-width: 900px;
 }
 
 
