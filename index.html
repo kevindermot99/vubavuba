@@ -865,70 +865,90 @@
     <script>
       // all of the items
       var allBtn = document.getElementById("All");
-      $(allBtn).click(function () {
+      $(allBtn).on("click", function () {
         $(".menu-item").show();
+        $(".menu-item").removeClass("active")
+        $(this).addClass("active")
       })
 
       // burgers
       var burgerBtn = document.getElementById("Burger");
-      $(burgerBtn).click(function () {
+      $(burgerBtn).on("click", function () {
         $(".menu-item").show();
+        $(".menu-item").removeClass("active")
+        $(this).addClass("active")
         $(".menu-item:not(.Burger)").hide();
       })
 
       // chicken
       var chickenBtn = document.getElementById("Chicken");
-      $(chickenBtn).click(function () {
+      $(chickenBtn).on("click", function () {
         $(".menu-item").show();
+        $(".menu-item").removeClass("active")
+        $(this).addClass("active")
         $(".menu-item:not(.Chicken)").hide();
       })
 
       // Pizza
       var pizzaBtn = document.getElementById("Pizza");
-      $(pizzaBtn).click(function () {
+      $(pizzaBtn).on("click", function () {
         $(".menu-item").show();
+        $(".menu-item").removeClass("active")
+        $(this).addClass("active")
         $(".menu-item:not(.Pizza)").hide();
       })
 
       // Drinks
       var drinksBtn = document.getElementById("Drinks");
-      $(drinksBtn).click(function () {
+      $(drinksBtn).on("click", function () {
         $(".menu-item").show();
+        $(".menu-item").removeClass("active")
+        $(this).addClass("active")
         $(".menu-item:not(.Drinks)").hide();
       })
 
       // Noodles
       var noodlesBtn = document.getElementById("Noodles");
-      $(noodlesBtn).click(function () {
+      $(noodlesBtn).on("click", function () {
         $(".menu-item").show();
+        $(".menu-item").removeClass("active")
+        $(this).addClass("active")
         $(".menu-item:not(.Noodles)").hide();
       })
 
       // Vegetables
       var vegetablesBtn = document.getElementById("Vegetables");
-      $(vegetablesBtn).click(function () {
+      $(vegetablesBtn).on("click", function () {
         $(".menu-item").show();
+        $(".menu-item").removeClass("active")
+        $(this).addClass("active")
         $(".menu-item:not(.Vegetables)").hide();
       })
 
       // Drinks
       var drinksBtn = document.getElementById("Drinks");
-      $(drinksBtn).click(function () {
+      $(drinksBtn).on("click", function () {
         $(".menu-item").show();
+        $(".menu-item").removeClass("active")
+        $(this).addClass("active")
         $(".menu-item:not(.Drinks)").hide();
       })
 
       // Burrito
       var burritoBtn = document.getElementById("Burrito");
-      $(burritoBtn).click(function () {
+      $(burritoBtn).on("click", function () {
         $(".menu-item").show();
+        $(".menu-item").removeClass("active")
+        $(this).addClass("active")
         $(".menu-item:not(.Burrito)").hide();
       })
 
       // Bread
       var breadBtn = document.getElementById("Bread");
-      $(breadBtn).click(function () {
+      $(breadBtn).on("click", function () {
         $(".menu-item").show();
+        $(".menu-item").removeClass("active")
+        $(this).addClass("active")
         $(".menu-item:not(.Bread)").hide();
       })
 
