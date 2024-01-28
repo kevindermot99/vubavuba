@@ -272,7 +272,7 @@ p {
     align-items: center;
     background-color: #fff;
     border-radius: 10px;
-    border: 2px solid #cacaca48;
+    border: 3px solid #cacaca48;
     overflow: hidden;
     padding: 7px;
     cursor: pointer;
@@ -313,6 +313,7 @@ p {
     padding: 5px;
     background-color: #90909027;
     border-radius: 7px;
+    transition: .2s;
 }
 
 .explore-menu .em-types .type span {
