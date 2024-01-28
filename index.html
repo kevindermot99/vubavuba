@@ -79,7 +79,7 @@
         <div class="explore-menu">
           <h1>Explore Menu</h1>
           <div class="em-types">
-            <div class="type active"><span>All Items</span></div>
+            <div class="type active" id="All"><span>All Items</span></div>
             <div class="type" id="Burger">
               <img src="assets/burger.png" /><span>Burger</span>
             </div>
@@ -863,6 +863,11 @@
 
     <!-- Toggling items -->
     <script>
+      // all of the items
+      var allBtn = document.getElementById("All");
+      $(allBtn).click(function () {
+        $(".menu-item").show();
+      })
 
       // burgers
       var burgerBtn = document.getElementById("Burger");
