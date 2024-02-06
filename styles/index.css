@@ -604,7 +604,7 @@ p {
     color: #fff;
     font-size: 18px;
     font-weight: 600;
-    min-height: 500px;
+    min-height: 80vh;
     width: 100%;
     gap: 10px;
     text-align: left;
@@ -614,7 +614,7 @@ p {
 
 .swiper-wrapper{
     height: 100vh;
-    max-height: 500px;
+    max-height: 80vh;
     width: 100%;
     /* max-width: 1300px; */
     margin: auto;
